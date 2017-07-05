@@ -1,5 +1,4 @@
 var {User} = require('./../models/user');
-const bcrypt = require('bcryptjs') ;
 
 var authenticate = ( req, res, next ) => {
     var token = req.header('x-auth') ;        
